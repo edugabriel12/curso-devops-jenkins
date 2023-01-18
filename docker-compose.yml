@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  pg-devops:
+    container_name: pg-devops
+    image: postgres:9.6
+    ports: 
+      - 5433:5432
+    environment:
+      - POSTGRES_DB=curso-devops
+      - POSTGRES_PASSWORD=admin
